@@ -1,0 +1,48 @@
+.navbar-style {
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: black;
+}
+
+.box_shadow {
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.light-shadow {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.logo-spacing {
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+	margin-right: 3rem;
+}
+
+.navbar-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100px;
+	width: 100%;
+}
+
+.icon-button-sizing {
+	font-size: 2rem;
+}
+
+.icon-spacing {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.hello-user {
+	margin-left: 2rem;
+	font-size: smaller;
+}
+
+.logo-size {
+	height: 100px;
+	width: 150px;
+	border-radius: 15px;
+}

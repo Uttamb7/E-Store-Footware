@@ -1,0 +1,39 @@
+<mat-toolbar class="navbar-wrap navbar-style light-shadow">
+	<mat-toolbar-row class="navbar-style">
+
+		<a class="logo-spacing logo-size"
+		   routerLink="/home">
+			<img
+				src="/assets/7ShoesLogo.png"
+				alt="Logo"
+				height="70px"
+				width="130px"
+				style="border-radius: 8px"
+			/>
+		</a>
+
+		<a [queryParams]="{query: 'New'}" mat-button routerLink="/browse">New Arrivals</a>
+		<a [queryParams]="{query: 'Mens'}" mat-button routerLink="/browse">Mens</a>
+		<a [queryParams]="{query: 'Womens'}" mat-button routerLink="/browse">Womens</a>
+		<a [queryParams]="{query: 'Kids'}" mat-button routerLink="/browse">Kids</a>
+		<a *ngIf="isAdmin()" mat-button routerLink="/inventory">Inventory</a>
+		<a *ngIf="isAdmin()" mat-button routerLink="/orders">Orders</a>
+
+		<app-searchbar></app-searchbar>
+
+		<a mat-icon-button routerLink="./home">
+			<mat-icon>home</mat-icon>
+		</a>
+
+		<a *ngIf="!isAdmin()" mat-icon-button routerLink="/cart">
+			<mat-icon>shopping_cart</mat-icon>
+		</a>
+
+		<a mat-icon-button routerLink="/login">
+			<mat-icon>face</mat-icon>
+		</a>
+
+		<span class="hello-user"> Hello, {{userService.getUser().username.toString()}}! </span>
+	</mat-toolbar-row>
+</mat-toolbar>
+

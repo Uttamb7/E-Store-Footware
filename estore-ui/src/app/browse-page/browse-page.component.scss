@@ -1,0 +1,50 @@
+.constrained {
+	padding: 1rem;
+	margin: 1rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 78%;
+	min-height: 75%;
+	min-width: 24px;
+	float: left;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 25px;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.box {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 10px;
+}
+
+.headerFont {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	margin-bottom: 0px;
+	font-style: normal;
+	font-variant-caps: normal;
+	font-variant-ligatures: normal;
+	font-variant-numeric: normal;
+	font-variant-east-asian: normal;
+	font-variant-alternates: normal;
+	font-kerning: auto;
+	font-optical-sizing: auto;
+	font-feature-settings: normal;
+	font-variation-settings: normal;
+	font-weight: 700;
+	font-stretch: normal;
+	font-size: 3rem;
+	line-height: 1.1;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+.disabled {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.margin {
+	margin: 1rem;
+}

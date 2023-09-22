@@ -1,0 +1,59 @@
+.womens-image-fit {
+	object-fit: cover;
+	object-position: bottom;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 50px;
+}
+
+.stan-smith-fit {
+	object-fit: cover;
+	object-position: bottom;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 50px;
+}
+
+.nike-image-fit {
+	object-fit: cover;
+	object-position: left;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 50px;
+}
+
+.image-spacing {
+	margin: 2rem;
+}
+
+.image-border {
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+.center-justification {
+	display: flex;
+	justify-content: center;
+}
+
+.text-align {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.under-image-text {
+	text-align: center;
+	font-size: x-large;
+	font-weight: bolder;
+	text-shadow: white;
+	margin: 1rem;
+}
+
+.vertical-justification {
+	display: flex;
+	flex-direction: column;
+}
+
+.featured_sizing {
+	max-width: 400px;
+	max-height: 400px;
+}

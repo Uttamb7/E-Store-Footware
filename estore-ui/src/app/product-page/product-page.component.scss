@@ -1,0 +1,189 @@
+.disabled {
+	opacity: 0.5;
+	background-color: gray !important;
+}
+
+.div-design {
+	margin: 2rem;
+	height: 70%;
+	min-width: 24px;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+
+}
+
+.product-image {
+	margin: 1rem;
+	padding: 1rem;
+	border-color: black;
+	border-width: thick;
+	background-color: white;
+	width: 65%;
+	height: 85%;
+	min-width: 24px;
+	border-radius: 25px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	position: center;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	bottom: 0;
+	width: 25%;
+	height: 90%;
+	justify-content: center;
+}
+
+.shoe-info {
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background-color: whitesmoke;
+	padding-top: 2rem;
+	border-radius: 25px;
+	align-items: center;
+}
+
+.product-name {
+	margin-left: 2.5rem;
+	float: left;
+	font: 900 2.25rem/1.1 Roboto, Arial, sans-serif
+}
+
+.product-sizing {
+	margin-left: 2.7rem;
+	float: left;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.product-price {
+	margin-left: 2.7rem;
+	float: left;
+	font: 1rem/1.5 Roboto, Arial, sans-serif;
+	line-height: 1;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.button-grid {
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 23px;
+	list-style: none;
+	justify-items: start;
+
+}
+
+.button {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #ccc;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 0;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+.button:hover {
+	background-color: #555;
+}
+
+.shipping {
+	display: inline-flex;
+	width: 80%;
+	border-radius: 50px;
+	padding: 0;
+	box-sizing: border-box;
+	min-width: 200px;
+	min-height: 50px;
+	max-height: 54px;
+	margin-top: 1rem;
+	background-color: #555555;
+	font-weight: bold;
+	font-size: larger;
+	color: whitesmoke;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.box_shadow {
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.shipping_size img {
+	width: 10px;
+	height: 10px;
+}
+
+.apple-pay {
+	display: inline-block;
+	background-size: 100% 60%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border-radius: 25px;
+	padding: 0;
+
+	box-sizing: border-box;
+	width: 80%;
+	min-height: 40px;
+	max-height: 64px;
+	margin-top: 1rem;
+	font-family: Roboto, sans-serif;
+	color: whitesmoke;
+	font-weight: bolder;
+	font-size: larger;
+
+}
+
+.apple-pay-button-black {
+	background-color: black;
+}
+
+.add-to-cart {
+	display: inline-block;
+	color: white;
+	background-size: 100% 60%;
+	border-radius: 25px;
+	padding: 0;
+	box-sizing: border-box;
+	width: 80%;
+	min-height: 40px;
+	max-height: 64px;
+	margin-top: 1rem;
+	background: linear-gradient(to left, #32217b, #3c77ff);
+	font-weight: bold;
+	font-size: larger;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.flex-center {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 9rem;
+}
+
+.image-size {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 25px;
+}

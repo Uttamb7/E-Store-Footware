@@ -1,0 +1,10 @@
+<mat-toolbar class="primary">
+	<form class="example-form">
+		<mat-form-field class="example-full-width ">
+			<input [(ngModel)]="searchTerm" id="search" matInput name="search" placeholder="Search" type="text">
+			<button (click)="searchShoes(searchTerm)" mat-button matSuffix type="submit">
+				<mat-icon>search</mat-icon>
+			</button>
+		</mat-form-field>
+	</form>
+</mat-toolbar>

@@ -1,0 +1,60 @@
+<h1 class="headerFont">
+	Inventory
+</h1>
+
+<div class="main-box row">
+	<div class="button-box">
+		<span class="button-box">
+			<button (click)="openEditor()" class="green-button-style">Add Shoe</button>
+		</span>
+	</div>
+	<div *ngIf="editorMode != 'HIDDEN'" class="column">
+		<div class="input-column">
+			<span>
+				<label for="new-shoe-id">ID #:</label>
+				<input [(ngModel)]="shoeInEditor.id" class="input" id="new-shoe-id" placeholder="Enter ID Number"/>
+
+				<label for="new-shoe-brand"> Brand:</label>
+				<input [(ngModel)]="shoeInEditor.brand" class="input" id="new-shoe-brand" placeholder="Enter Brand Name"/>
+
+				<label for="new-shoe-style">Style:</label>
+				<input [(ngModel)]="shoeInEditor.style" class="input" id="new-shoe-style" placeholder="Enter Shoe Style"/>
+
+				<label for="new-shoe-sizing">Sizing:</label>
+				<select [(ngModel)]="shoeInEditor.sizing" class="dropdown-input" id="new-shoe-sizing">
+					<option value="Mens">Mens</option>
+					<option value="Womens">Womens</option>
+					<option value="Kids">Kids</option>
+				</select>
+			</span>
+			<span>
+				<label for="new-shoe-size">Size:</label>
+				<input [(ngModel)]="shoeInEditor.size" class="input" id="new-shoe-size" placeholder="Enter Shoe Size"/>
+
+				<label for="new-shoe-price">Price:</label>
+				<input [(ngModel)]="shoeInEditor.price" class="input" id="new-shoe-price" placeholder="Enter Shoe Price"/>
+
+				<label for="new-shoe-material">Material:</label>
+				<input [(ngModel)]="shoeInEditor.material" class="input" id="new-shoe-material" placeholder="Enter Material"/>
+
+				<label for="new-shoe-color">Color:</label>
+				<input [(ngModel)]="shoeInEditor.color" class="input" id="new-shoe-color" placeholder="Enter Shoe Color"/>
+			</span>
+		</div>
+		<ul class="create-shoe">
+			<button (click)="submitEditor()" class="green-button-style">Save</button>
+		</ul>
+	</div>
+
+	<div class="column-2">
+		<ul class="column-3">
+			<a *ngFor="let shoe of shoes;" class="inline">
+					<span class="inline create-shoe">
+						{{shoe.id}} | {{shoe.brand}} | {{shoe.style}} | {{shoe.sizing}} {{shoe.size}} | {{shoe.price}} | {{shoe.material}} | {{shoe.color}}
+						<button (click)="openEditor(shoe)" class="update-button-style" title="Edit Shoe" type="button">Edit</button>
+						<button (click)="deleteShoe(shoe)" class="delete-button-style" title="Delete Shoe" type="button">Delete</button>
+					</span>
+			</a>
+		</ul>
+	</div>
+</div>

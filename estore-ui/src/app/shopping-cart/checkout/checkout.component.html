@@ -1,0 +1,30 @@
+<h1 class="headerFont">Checkout</h1>
+<div class="form-container">
+	<form (ngSubmit)="onSubmit()" [formGroup]="checkoutForm" class="login-box">
+	<span class="span">
+		<label class="labelFont" for="cardHolderName"> Card Holder Name: </label>
+		<input class="input" formControlName="cardHolderName" id="cardHolderName" placeholder="Cardholder name" type='text'/>
+		<!--<div *ngIf="!validUsername()">Please enter a username</div>-->
+		</span>
+		<span class="span">
+		<label class="labelFont" for="cardNumber"> Enter 16-Digit Card Number: </label>
+		<input class="input" formControlName="cardNumber" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" type='text'/>
+			<!--<div *ngIf="!validPassword()"> Please enter a password</div>-->
+	</span>
+		<span class="span">
+		<label class="labelFont" for="cardExpiration"> Enter Expiration Date:  </label>
+		<input class="input" formControlName="cardExpiration" id="cardExpiration" placeholder="MM/YY" type='text'/>
+			<!--<div *ngIf="!validPassword()"> Please enter a password</div>-->
+	</span>
+		<span class="span">
+		<label class="labelFont" for="cardSecurityCode"> Enter 3-Digit Security Code: </label>
+		<input class="input" formControlName="cardSecurityCode" id="cardSecurityCode" placeholder="XXX" type='text'/>
+			<!--<div *ngIf="!validPassword()"> Please enter a password</div>-->
+	</span>
+		<p class="span labelFont">Total cost: {{ totalPrice | currency }}</p>
+		<span class="span button-container">
+		<button (click)="onSubmit()" class="checkout-button" routerLink="/home" type="submit">Checkout</button>
+	</span>
+	</form>
+</div>
+

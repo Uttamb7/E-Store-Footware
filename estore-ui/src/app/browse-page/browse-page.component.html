@@ -1,0 +1,21 @@
+<div>
+	<h3 class="headerFont"> Browsing {{query}} Shoes</h3>
+</div>
+
+<app-filter-menu (filtering)="ingestFilter($event)"></app-filter-menu>
+
+<div class="constrained">
+	<mat-grid-list cols="4" rowHeight="200px">
+		<mat-grid-tile (click)="routeTo(shoe.id)" *ngFor="let shoe of shoes" class="clickable box">
+			<div matGridAvatar><img [src]="'https://dummyimage.com/100x100/000/fff&text='+shoe.style" alt="shoe image"></div>
+			<div>
+				<div matListItemTitle>{{shoe.brand}} {{shoe.style}}</div>
+				<div matListItemLine>{{shoe.sizing}}</div>
+				<div matListItemLine><strong>${{shoe.price}}</strong></div>
+				<button (click)="addToCart($event, shoe)" [class.disabled]="!isLoggedIn()" [matTooltip]="isLoggedIn() ? '' : 'Must be logged in to add to cart!'">
+					<mat-icon>add_shopping_cart</mat-icon>
+				</button>
+			</div>
+		</mat-grid-tile>
+	</mat-grid-list>
+</div>

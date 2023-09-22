@@ -1,0 +1,13 @@
+<h1 class="headerFont">Shopping Cart</h1>
+<div class="form-container">
+	<ul class="login-box">
+		<li *ngFor="let item of items" class="items-in-cart-box item-font">
+			{{ item.brand }} {{item.style}} {{item.material}} - {{ item.price | currency }}
+			<button (click)="removeItem(item)" class="remove-button">Remove</button>
+		</li>
+		<p class="labelFont">Total cost: {{ totalPrice | currency }}</p>
+		<span class="button-container">
+			<button class="checkout-button" routerLink="/checkout" type="submit">Checkout</button>
+		</span>
+	</ul>
+</div>
